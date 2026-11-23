@@ -8,9 +8,9 @@ these schemas (Strands sends validation errors back to the model to fix).
 from __future__ import annotations
 
 from datetime import datetime, timezone
-from typing import Literal
+from typing import Any, Literal, get_origin
 
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, ValidationInfo, field_validator
 
 RiskTolerance = Literal["conservative", "moderate", "aggressive"]
 Currency = Literal["USD", "PKR"]
@@ -40,7 +40,12 @@ class InvestmentRequest(BaseModel):
     investor_country: Literal["PK", "US", "OTHER"] = "PK"
     price_inputs: dict[str, PriceInput] = Field(default_factory=dict)
     include_untrusted_documents: bool = False
+    revision_notes: list[str] = Field(default_factory=list, max_length=3)
 
+    @field_validator("revision_notes")
+    @classmethod
+    def _short_notes(cls, v: list[str]) -> list[str]:
+        return [n.strip()[:500] for n in v if n.strip()]
     @field_validator("tickers")
     @classmethod
     def _upper_unique(cls, v: list[str]) -> list[str]:
@@ -52,12 +57,29 @@ class InvestmentRequest(BaseModel):
         return out
 
 
+class _Lenient(BaseModel):
+    """Models sometimes send null or a bare string for a list field. Accept both
+    (null -> [], "x" -> ["x"]) instead of failing validation in a loop."""
+
+    @field_validator("*", mode="before")
+    @classmethod
+    def _coerce_lists(cls, v: Any, info: ValidationInfo) -> Any:
+        field = cls.model_fields.get(info.field_name or "")
+        if field is None or get_origin(field.annotation) is not list:
+            return v
+        if v is None:
+            return []
+        if isinstance(v, (str, dict)):
+            return [v]
+        return v
+
+
 class Evidence(BaseModel):
     claim: str = Field(description="One factual statement used in the analysis")
-    source: str = Field(description="Tool name and/or source_id the claim came from, e.g. 'calculate_profit_margins / sec-xbrl-nvda'")
+    source: str = Field(description="Tool name and/or source_id the claim came from, e.g. 'calculate_profit_margin / sec-xbrl-nvda'")
 
 
-class SpecialistFinding(BaseModel):
+class SpecialistFinding(_Lenient):
     """Structured result each specialist returns to the supervisor."""
 
     stance: Stance = Field(description="positive, neutral or negative view on the opportunity from this specialist's angle")
@@ -69,7 +91,7 @@ class SpecialistFinding(BaseModel):
     confidence: Confidence
 
 
-class CommitteeReport(BaseModel):
+class CommitteeReport(_Lenient):
     """Final structured recommendation produced by the supervisor."""
 
     recommendation: Recommendation = Field(description="INVEST (allocate now, subject to human approval), HOLD (do not allocate now, keep on watchlist) or REJECT")
