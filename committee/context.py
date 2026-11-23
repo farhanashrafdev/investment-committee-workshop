@@ -37,7 +37,13 @@ class SharedContext:
     specialist_calls: Counter = field(default_factory=Counter)
     specialist_findings: dict[str, list[dict[str, Any]]] = field(default_factory=dict)
     security_events: list[dict[str, Any]] = field(default_factory=list)
+    usage: list[dict[str, Any]] = field(default_factory=list)
+    cancel_signal: threading.Event = field(default_factory=threading.Event, repr=False)
     _lock: threading.Lock = field(default_factory=threading.Lock, repr=False)
+
+    def add_usage(self, agent: str, model_id: str, tokens: dict[str, int], cost_usd: float | None) -> None:
+        with self._lock:
+            self.usage.append({"agent": agent, "model_id": model_id, "tokens": tokens, "cost_usd": cost_usd})
 
     def time_left(self) -> float | None:
         return None if self.deadline is None else self.deadline - time.monotonic()
