@@ -38,8 +38,7 @@ def shot(page: Page, name: str, at_text: str | None = None) -> None:
     scroll the target heading into view instead of using full_page."""
     OUT.mkdir(parents=True, exist_ok=True)
     if at_text:
-        page.get_by_text(at_text, exact=False).first.scroll_into_view_if_needed()
-        page.mouse.wheel(0, -120)
+        page.get_by_text(at_text, exact=False).first.evaluate("e => e.scrollIntoView({block: 'start'})")
         time.sleep(0.8)
     page.screenshot(path=str(OUT / f"{name}.png"))
     print("saved", name)
