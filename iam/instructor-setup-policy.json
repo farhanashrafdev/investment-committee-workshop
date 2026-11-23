@@ -1,0 +1,20 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "CreateAndManageWorkshopGuardrail",
+      "Effect": "Allow",
+      "Action": ["bedrock:CreateGuardrail", "bedrock:ListGuardrails", "bedrock:GetGuardrail", "bedrock:DeleteGuardrail", "bedrock:TagResource"],
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": { "aws:RequestedRegion": "us-east-1" }
+      }
+    },
+    {
+      "Sid": "InspectInferenceProfiles",
+      "Effect": "Allow",
+      "Action": ["bedrock:ListInferenceProfiles", "bedrock:GetInferenceProfile", "bedrock:ListFoundationModels"],
+      "Resource": "*"
+    }
+  ]
+}

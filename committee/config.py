@@ -17,9 +17,8 @@ from dotenv import load_dotenv
 ROOT_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(ROOT_DIR / ".env", override=False)
 
-# Model IDs verified as invocable in the workshop account on 2026-11-23.
-# Claude models are better at multi-step tool use; switch to them once your
-# account has Anthropic model access (see workshop/troubleshooting.md).
+# Amazon Nova models (first-party AWS models, no AWS Marketplace subscription needed).
+# Verified as invocable in the workshop account on 2026-11-23.
 DEFAULT_SUPERVISOR_MODEL = "us.amazon.nova-pro-v1:0"
 DEFAULT_SPECIALIST_MODEL = "global.amazon.nova-2-lite-v1:0"
 
@@ -102,4 +101,6 @@ def get_settings() -> Settings:
         log_level=os.getenv("LOG_LEVEL", "INFO").upper(),
         console_tracing=_bool("STRANDS_CONSOLE_TRACING"),
         otlp_endpoint=(os.getenv("OTEL_EXPORTER_OTLP_ENDPOINT") or "").strip() or None,
+        audit_dir=Path(os.getenv("AUDIT_DIR") or ROOT_DIR / "audit"),
+        log_dir=Path(os.getenv("LOG_DIR") or ROOT_DIR / "logs"),
     )
