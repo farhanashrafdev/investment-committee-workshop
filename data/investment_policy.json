@@ -1,0 +1,16 @@
+{
+  "max_single_position_pct": {
+    "conservative": 10,
+    "moderate": 20,
+    "aggressive": 35
+  },
+  "min_confidence_to_invest": "medium",
+  "target_return_bands_pp_over_risk_free": {
+    "low_risk_max": 0,
+    "equity_risk_max": 8,
+    "speculative_above": 15
+  },
+  "stress_scenarios_pct": [-20, -35, -50],
+  "fx_shock_pct": 10,
+  "notes": "Workshop investment policy. These limits are the committee's own rules for the demo (they are deterministic checks enforced in Python), not market facts or regulatory requirements."
+}

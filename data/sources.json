@@ -1,0 +1,117 @@
+{
+  "retrieved": "2026-11-23",
+  "sources": [
+    {
+      "id": "sec-xbrl-nvda",
+      "publisher": "U.S. Securities and Exchange Commission (EDGAR XBRL API)",
+      "title": "NVIDIA Corporation company facts, values from 10-K accession 0001045810-26-000021",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+      "reporting_period_end": "2026-01-25",
+      "filed": "2026-02-25",
+      "currency": "USD",
+      "retrieved": "2026-11-23",
+      "notes": "Annual (fiscal-year) values as reported in the latest 10-K. Free cash flow is computed by the workshop as operating cash flow minus purchases of property and equipment."
+    },
+    {
+      "id": "sec-10k-nvda",
+      "publisher": "U.S. Securities and Exchange Commission (EDGAR)",
+      "title": "NVIDIA Corporation Form 10-K for fiscal period ending 2026-01-25",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+      "reporting_period_end": "2026-01-25",
+      "filed": "2026-02-25",
+      "retrieved": "2026-11-23",
+      "notes": "Verbatim excerpts extracted programmatically from the 10-K text."
+    },
+    {
+      "id": "sec-xbrl-msft",
+      "publisher": "U.S. Securities and Exchange Commission (EDGAR XBRL API)",
+      "title": "Microsoft Corporation company facts, values from 10-K accession 0001193125-26-323660",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+      "reporting_period_end": "2026-06-30",
+      "filed": "2026-07-29",
+      "currency": "USD",
+      "retrieved": "2026-11-23",
+      "notes": "Annual (fiscal-year) values as reported in the latest 10-K. Free cash flow is computed by the workshop as operating cash flow minus purchases of property and equipment."
+    },
+    {
+      "id": "sec-10k-msft",
+      "publisher": "U.S. Securities and Exchange Commission (EDGAR)",
+      "title": "Microsoft Corporation Form 10-K for fiscal period ending 2026-06-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+      "reporting_period_end": "2026-06-30",
+      "filed": "2026-07-29",
+      "retrieved": "2026-11-23",
+      "notes": "Verbatim excerpts extracted programmatically from the 10-K text."
+    },
+    {
+      "id": "sec-xbrl-amzn",
+      "publisher": "U.S. Securities and Exchange Commission (EDGAR XBRL API)",
+      "title": "Amazon.com, Inc. company facts, values from 10-K accession 0001018724-26-000004",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+      "reporting_period_end": "2025-12-31",
+      "filed": "2026-02-06",
+      "currency": "USD",
+      "retrieved": "2026-11-23",
+      "notes": "Annual (fiscal-year) values as reported in the latest 10-K. Free cash flow is computed by the workshop as operating cash flow minus purchases of property and equipment."
+    },
+    {
+      "id": "sec-10k-amzn",
+      "publisher": "U.S. Securities and Exchange Commission (EDGAR)",
+      "title": "Amazon.com, Inc. Form 10-K for fiscal period ending 2025-12-31",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+      "reporting_period_end": "2025-12-31",
+      "filed": "2026-02-06",
+      "retrieved": "2026-11-23",
+      "notes": "Verbatim excerpts extracted programmatically from the 10-K text."
+    },
+    {
+      "id": "psx-dps-sys",
+      "publisher": "Pakistan Stock Exchange Data Portal (data powered by Capital Stake)",
+      "title": "Systems Limited (SYS) company page",
+      "url": "https://dps.psx.com.pk/company/SYS",
+      "market_data_as_of": "Mon, Nov 23, 2026 3:49 PM",
+      "currency": "PKR",
+      "retrieved": "2026-11-23",
+      "notes": "Financial figures are shown in PKR thousands on the portal and converted to PKR here. The portal says data may be standardized and differ from the issuer's annual report."
+    },
+    {
+      "id": "psx-dps-ogdc",
+      "publisher": "Pakistan Stock Exchange Data Portal (data powered by Capital Stake)",
+      "title": "Oil & Gas Development Company Limited (OGDC) company page",
+      "url": "https://dps.psx.com.pk/company/OGDC",
+      "market_data_as_of": "Mon, Nov 23, 2026 3:49 PM",
+      "currency": "PKR",
+      "retrieved": "2026-11-23",
+      "notes": "Financial figures are shown in PKR thousands on the portal and converted to PKR here. The portal says data may be standardized and differ from the issuer's annual report."
+    },
+    {
+      "id": "psx-dps-luck",
+      "publisher": "Pakistan Stock Exchange Data Portal (data powered by Capital Stake)",
+      "title": "Lucky Cement Limited (LUCK) company page",
+      "url": "https://dps.psx.com.pk/company/LUCK",
+      "market_data_as_of": "Mon, Nov 23, 2026 3:49 PM",
+      "currency": "PKR",
+      "retrieved": "2026-11-23",
+      "notes": "Financial figures are shown in PKR thousands on the portal and converted to PKR here. The portal says data may be standardized and differ from the issuer's annual report."
+    },
+    {
+      "id": "sbp-indicators",
+      "publisher": "State Bank of Pakistan",
+      "title": "SBP key indicators (policy rate, USD/PKR M2M revaluation rate, T-bill cut-off yields)",
+      "url": "https://www.sbp.org.pk/ecodata/rates/m2m/M2M-Current.asp",
+      "retrieved": "2026-11-23",
+      "notes": "Values as displayed on the SBP website on the retrieval date."
+    },
+    {
+      "id": "ust-yield-curve",
+      "publisher": "U.S. Department of the Treasury",
+      "title": "Daily Treasury Par Yield Curve Rates",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+      "retrieved": "2026-11-23",
+      "notes": "Latest row in the CSV on the retrieval date (11/20/2026)."
+    }
+  ]
+}

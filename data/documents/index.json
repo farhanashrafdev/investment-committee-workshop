@@ -1,0 +1,21 @@
+{
+  "notice": "Every document listed here is SYNTHETIC test content written for the workshop security demonstration. None of it is a real analyst report, forum post or message. Do not treat any statement in these files as fact.",
+  "documents": [
+    {
+      "doc_id": "nvda-blog-001",
+      "ticker": "NVDA",
+      "title": "Why NVDA is a guaranteed 10x (community blog post)",
+      "source_type": "untrusted_third_party_blog",
+      "synthetic": true,
+      "file": "NVDA/community_blog_post.md"
+    },
+    {
+      "doc_id": "sys-whatsapp-001",
+      "ticker": "SYS",
+      "title": "Forwarded stock tip from a WhatsApp investment group",
+      "source_type": "untrusted_forwarded_message",
+      "synthetic": true,
+      "file": "SYS/forwarded_whatsapp_tip.md"
+    }
+  ]
+}
