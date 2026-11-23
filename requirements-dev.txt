@@ -1,4 +1,6 @@
 -r requirements.txt
 pytest~=9.2
-# Only needed to rebuild the slide deck (scripts/build_slides.py).
+# Rebuild the slide deck: python scripts/build_slides.py
 python-pptx~=1.0
+# Capture UI screenshots: python scripts/capture_screenshots.py (then: python -m playwright install chromium)
+playwright~=1.65
