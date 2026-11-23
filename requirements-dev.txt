@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest~=9.2
+# Only needed to rebuild the slide deck (scripts/build_slides.py).
+python-pptx~=1.0

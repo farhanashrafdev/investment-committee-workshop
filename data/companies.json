@@ -1,0 +1,701 @@
+{
+  "dataset_version": "2026-11-23",
+  "built_at_utc": "2026-11-23T20:30:25+00:00",
+  "disclaimer": "Educational workshop dataset. Figures come from the cited public sources as of the retrieval date; qualitative items marked 'workshop_summary' are interpretations written for the workshop, not company statements.",
+  "companies": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "market": "US",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "sector": "Semiconductors / Accelerated computing",
+      "fiscal_year_end": "Last Sunday of January",
+      "business_description": {
+        "text": "NVIDIA pioneered accelerated computing to help solve the most challenging computational problems.",
+        "kind": "filing_excerpt",
+        "source_id": "sec-10k-nvda"
+      },
+      "financials": [
+        {
+          "fiscal_year": "FY2024",
+          "period_start": "2023-01-30",
+          "period_end": "2024-01-28",
+          "revenue": 60922000000.0,
+          "operating_income": 32972000000.0,
+          "net_income": 29760000000.0,
+          "operating_cash_flow": 28090000000.0,
+          "capital_expenditures": 1069000000.0,
+          "diluted_eps": 1.19,
+          "source_id": "sec-xbrl-nvda"
+        },
+        {
+          "fiscal_year": "FY2025",
+          "period_start": "2024-01-29",
+          "period_end": "2025-01-26",
+          "revenue": 130497000000.0,
+          "operating_income": 81453000000.0,
+          "net_income": 72880000000.0,
+          "operating_cash_flow": 64089000000.0,
+          "capital_expenditures": 3236000000.0,
+          "diluted_eps": 2.94,
+          "source_id": "sec-xbrl-nvda"
+        },
+        {
+          "fiscal_year": "FY2026",
+          "period_start": "2025-01-27",
+          "period_end": "2026-01-25",
+          "revenue": 215938000000.0,
+          "operating_income": 130387000000.0,
+          "net_income": 120067000000.0,
+          "operating_cash_flow": 102718000000.0,
+          "capital_expenditures": 6042000000.0,
+          "diluted_eps": 4.9,
+          "source_id": "sec-xbrl-nvda"
+        }
+      ],
+      "shares_outstanding": {
+        "value": 24300000000.0,
+        "as_of": "2026-02-20",
+        "source_id": "sec-xbrl-nvda",
+        "notes": "Shares outstanding from the 10-K cover page (sum of share classes if more than one)."
+      },
+      "market_snapshot": null,
+      "competitive_advantages": [
+        {
+          "text": "Full-stack platform: GPUs, networking, systems and the CUDA software ecosystem that developers build on (workshop interpretation of the 10-K business section).",
+          "kind": "workshop_summary",
+          "source_id": "sec-10k-nvda"
+        },
+        {
+          "text": "A large developer ecosystem around CUDA can raise switching costs for customers (workshop interpretation, not a company statement).",
+          "kind": "workshop_summary",
+          "source_id": "sec-10k-nvda"
+        },
+        {
+          "text": "With our introduction of CUDA in 2006, we opened the parallel processing capabilities of our GPU to a broad range of compute-intensive applications, paving the way for the emergence of modern AI.",
+          "kind": "filing_excerpt",
+          "source_id": "sec-10k-nvda"
+        }
+      ],
+      "risks": [
+        {
+          "category": "regulatory",
+          "text": "Over the past three years, we have been subject to a series of shifting and expanding export control restrictions, impacting our ability to serve customers outside the United States.",
+          "kind": "filing_excerpt",
+          "source_id": "sec-10k-nvda"
+        },
+        {
+          "category": "concentration",
+          "text": "Three direct customers accounted for 25 %, 18 %, and 13 % of our accounts receivable balance as of January 25, 2026.",
+          "kind": "filing_excerpt",
+          "source_id": "sec-10k-nvda"
+        },
+        {
+          "category": "supply_chain",
+          "text": "We utilize foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co.",
+          "kind": "filing_excerpt",
+          "source_id": "sec-10k-nvda"
+        },
+        {
+          "category": "market",
+          "text": "Revenue depends heavily on data-center and AI infrastructure spending cycles; a slowdown in customer capex would hit growth (workshop interpretation).",
+          "kind": "workshop_summary",
+          "source_id": "sec-10k-nvda"
+        },
+        {
+          "category": "valuation",
+          "text": "Market expectations may already price in continued growth; valuation cannot be judged without a current share price (workshop interpretation).",
+          "kind": "workshop_summary",
+          "source_id": "sec-10k-nvda"
+        }
+      ],
+      "data_gaps": [
+        "No market share price in the dataset: market capitalization and P/E need a price you supply (with its date and source).",
+        "Annual figures only; the most recent quarters are not included.",
+        "Fiscal years differ between companies (NVIDIA ends in January, Microsoft in June, Amazon in December)."
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "market": "US",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "sector": "Software / Cloud computing",
+      "fiscal_year_end": "June 30",
+      "business_description": {
+        "text": "Our mission is to empower every person and every organization on the planet to achieve more.",
+        "kind": "filing_excerpt",
+        "source_id": "sec-10k-msft"
+      },
+      "financials": [
+        {
+          "fiscal_year": "FY2024",
+          "period_start": "2023-07-01",
+          "period_end": "2024-06-30",
+          "revenue": 245122000000.0,
+          "operating_income": 109433000000.0,
+          "net_income": 88136000000.0,
+          "operating_cash_flow": 118548000000.0,
+          "capital_expenditures": 44477000000.0,
+          "diluted_eps": 11.8,
+          "source_id": "sec-xbrl-msft"
+        },
+        {
+          "fiscal_year": "FY2025",
+          "period_start": "2024-07-01",
+          "period_end": "2025-06-30",
+          "revenue": 281724000000.0,
+          "operating_income": 128528000000.0,
+          "net_income": 101832000000.0,
+          "operating_cash_flow": 136162000000.0,
+          "capital_expenditures": 64551000000.0,
+          "diluted_eps": 13.64,
+          "source_id": "sec-xbrl-msft"
+        },
+        {
+          "fiscal_year": "FY2026",
+          "period_start": "2025-07-01",
+          "period_end": "2026-06-30",
+          "revenue": 331839000000.0,
+          "operating_income": 155237000000.0,
+          "net_income": 133749000000.0,
+          "operating_cash_flow": 182935000000.0,
+          "capital_expenditures": 115948000000.0,
+          "diluted_eps": 17.95,
+          "source_id": "sec-xbrl-msft"
+        }
+      ],
+      "shares_outstanding": {
+        "value": 7425545491.0,
+        "as_of": "2026-07-23",
+        "source_id": "sec-xbrl-msft",
+        "notes": "Shares outstanding from the 10-K cover page (sum of share classes if more than one)."
+      },
+      "market_snapshot": null,
+      "competitive_advantages": [
+        {
+          "text": "Diversified revenue across cloud infrastructure, productivity software, platforms and gaming (workshop interpretation of the 10-K segment structure).",
+          "kind": "workshop_summary",
+          "source_id": "sec-10k-msft"
+        },
+        {
+          "text": "Large installed enterprise customer base for cross-selling cloud and AI services (workshop interpretation).",
+          "kind": "workshop_summary",
+          "source_id": "sec-10k-msft"
+        },
+        {
+          "text": "we have a long-term strategic partnership with OpenAI.",
+          "kind": "filing_excerpt",
+          "source_id": "sec-10k-msft"
+        }
+      ],
+      "risks": [
+        {
+          "category": "competition",
+          "text": "Our competitors are also scaling their infrastructure and use some of the same suppliers and materials for hardware components as we do, which impacts price and availability.",
+          "kind": "filing_excerpt",
+          "source_id": "sec-10k-msft"
+        },
+        {
+          "category": "cybersecurity",
+          "text": "Nation-state attacks against us, our customers, suppliers, or partners have and may continue to intensify due to our transparency to our customers, other stakeholders, and the public about cyberattacks, and during elections or periods of intense diplomatic or armed conflict.",
+          "kind": "filing_excerpt",
+          "source_id": "sec-10k-msft"
+        },
+        {
+          "category": "financial",
+          "text": "Capital expenditure for AI datacenters has grown quickly; returns on that spending are not yet visible in this dataset (see calculated capex intensity).",
+          "kind": "workshop_summary",
+          "source_id": "sec-10k-msft"
+        },
+        {
+          "category": "regulatory",
+          "text": "Size and market position attract regulatory and competition scrutiny in several jurisdictions (workshop interpretation).",
+          "kind": "workshop_summary",
+          "source_id": "sec-10k-msft"
+        }
+      ],
+      "data_gaps": [
+        "No market share price in the dataset: market capitalization and P/E need a price you supply (with its date and source).",
+        "Annual figures only; the most recent quarters are not included.",
+        "Fiscal years differ between companies (NVIDIA ends in January, Microsoft in June, Amazon in December)."
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "market": "US",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "sector": "E-commerce / Cloud computing",
+      "fiscal_year_end": "December 31",
+      "business_description": {
+        "text": "We seek to be Earth’s most customer-centric company.",
+        "kind": "filing_excerpt",
+        "source_id": "sec-10k-amzn"
+      },
+      "financials": [
+        {
+          "fiscal_year": "FY2023",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "revenue": 574785000000.0,
+          "operating_income": 36852000000.0,
+          "net_income": 30425000000.0,
+          "operating_cash_flow": 84946000000.0,
+          "capital_expenditures": 52729000000.0,
+          "diluted_eps": 2.9,
+          "source_id": "sec-xbrl-amzn"
+        },
+        {
+          "fiscal_year": "FY2024",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "revenue": 637959000000.0,
+          "operating_income": 68593000000.0,
+          "net_income": 59248000000.0,
+          "operating_cash_flow": 115877000000.0,
+          "capital_expenditures": 82999000000.0,
+          "diluted_eps": 5.53,
+          "source_id": "sec-xbrl-amzn"
+        },
+        {
+          "fiscal_year": "FY2025",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "revenue": 716924000000.0,
+          "operating_income": 79975000000.0,
+          "net_income": 77670000000.0,
+          "operating_cash_flow": 139514000000.0,
+          "capital_expenditures": 131819000000.0,
+          "diluted_eps": 7.17,
+          "source_id": "sec-xbrl-amzn"
+        }
+      ],
+      "shares_outstanding": {
+        "value": 10734920870.0,
+        "as_of": "2026-01-28",
+        "source_id": "sec-xbrl-amzn",
+        "notes": "Shares outstanding from the 10-K cover page (sum of share classes if more than one)."
+      },
+      "market_snapshot": null,
+      "competitive_advantages": [
+        {
+          "text": "Scale in logistics and fulfillment supports fast delivery and cost advantages in retail (workshop interpretation).",
+          "kind": "workshop_summary",
+          "source_id": "sec-10k-amzn"
+        },
+        {
+          "text": "AWS gives exposure to cloud infrastructure demand alongside the retail business (workshop interpretation).",
+          "kind": "workshop_summary",
+          "source_id": "sec-10k-amzn"
+        },
+        {
+          "text": "through AWS, which offers a broad set of on-demand technology services, including compute, storage, database, analytics, artificial intelligence and machine learning, and other services.",
+          "kind": "filing_excerpt",
+          "source_id": "sec-10k-amzn"
+        }
+      ],
+      "risks": [
+        {
+          "category": "competition",
+          "text": "The worldwide marketplace in which we compete is evolving rapidly and intensely competitive, and we face a broad array of competitors from many different industry sectors around the world.",
+          "kind": "filing_excerpt",
+          "source_id": "sec-10k-amzn"
+        },
+        {
+          "category": "regulatory",
+          "text": "ing, among other things: price fixing arrangements between each of Amazon and its vendors and Amazon and its third-party sellers; abuse of dominance, monopolization, and attempted monopolization; and consumer protection and unjust enrichment claims, in violation of federal and state antitrust, state consumer protection, and Canadian and U.",
+          "kind": "filing_excerpt",
+          "source_id": "sec-10k-amzn"
+        },
+        {
+          "category": "financial",
+          "text": "Very high capital expenditure relative to operating cash flow reduces free cash flow (see calculated FCF).",
+          "kind": "workshop_summary",
+          "source_id": "sec-10k-amzn"
+        },
+        {
+          "category": "margin",
+          "text": "Retail operations run on thin margins, so cost inflation or price competition can quickly affect profit (workshop interpretation).",
+          "kind": "workshop_summary",
+          "source_id": "sec-10k-amzn"
+        }
+      ],
+      "data_gaps": [
+        "No market share price in the dataset: market capitalization and P/E need a price you supply (with its date and source).",
+        "Annual figures only; the most recent quarters are not included.",
+        "Fiscal years differ between companies (NVIDIA ends in January, Microsoft in June, Amazon in December)."
+      ]
+    },
+    {
+      "ticker": "SYS",
+      "name": "Systems Limited",
+      "market": "PK",
+      "exchange": "PSX",
+      "currency": "PKR",
+      "sector": "Technology & Communication",
+      "fiscal_year_end": "December",
+      "business_description": {
+        "text": "Systems Limited is a public limited company incorporated in Pakistan under the Companies Act, 2017. The Company is principally engaged in the business of software development, trading of software and business process outsourcing services.",
+        "kind": "exchange_profile",
+        "source_id": "psx-dps-sys"
+      },
+      "financials": [
+        {
+          "fiscal_year": "FY2022",
+          "period_start": null,
+          "period_end": null,
+          "revenue": 20644765000.0,
+          "operating_income": null,
+          "net_income": 6299837000.0,
+          "operating_cash_flow": null,
+          "capital_expenditures": null,
+          "diluted_eps": 22.44,
+          "source_id": "psx-dps-sys"
+        },
+        {
+          "fiscal_year": "FY2023",
+          "period_start": null,
+          "period_end": null,
+          "revenue": 32037995000.0,
+          "operating_income": null,
+          "net_income": 8559160000.0,
+          "operating_cash_flow": null,
+          "capital_expenditures": null,
+          "diluted_eps": 29.41,
+          "source_id": "psx-dps-sys"
+        },
+        {
+          "fiscal_year": "FY2024",
+          "period_start": null,
+          "period_end": null,
+          "revenue": 38526984000.0,
+          "operating_income": null,
+          "net_income": 6115297000.0,
+          "operating_cash_flow": null,
+          "capital_expenditures": null,
+          "diluted_eps": 4.19,
+          "source_id": "psx-dps-sys"
+        },
+        {
+          "fiscal_year": "FY2025",
+          "period_start": null,
+          "period_end": null,
+          "revenue": 44230607000.0,
+          "operating_income": null,
+          "net_income": 8019014000.0,
+          "operating_cash_flow": null,
+          "capital_expenditures": null,
+          "diluted_eps": 5.46,
+          "source_id": "psx-dps-sys"
+        }
+      ],
+      "shares_outstanding": {
+        "value": 1530982855.0,
+        "as_of": "Mon, Nov 23, 2026 3:49 PM",
+        "source_id": "psx-dps-sys",
+        "notes": "Shares from PSX Data Portal equity profile."
+      },
+      "market_snapshot": {
+        "price": 109.49,
+        "currency": "PKR",
+        "as_of": "Mon, Nov 23, 2026 3:49 PM",
+        "market_cap": 167627312790.0,
+        "pe_ttm": 23.45,
+        "free_float_pct": 65.0,
+        "source_id": "psx-dps-sys",
+        "notes": "Snapshot captured when the dataset was built. P/E (TTM) as published by the portal, based on unconsolidated financials."
+      },
+      "competitive_advantages": [
+        {
+          "text": "Software development and business process outsourcing services can grow with client demand without heavy fixed assets (workshop interpretation).",
+          "kind": "workshop_summary",
+          "source_id": "psx-dps-sys"
+        }
+      ],
+      "risks": [
+        {
+          "category": "currency",
+          "text": "Check how much revenue is earned in foreign currency in the latest annual report: PKR/USD moves affect reported results (not quantified in this dataset).",
+          "kind": "workshop_summary",
+          "source_id": "psx-dps-sys"
+        },
+        {
+          "category": "talent",
+          "text": "IT services depend on retaining skilled staff; wage pressure can compress margins (workshop interpretation).",
+          "kind": "workshop_summary",
+          "source_id": "psx-dps-sys"
+        },
+        {
+          "category": "liquidity",
+          "text": "Free float is 65% of shares according to the PSX Data Portal; lower free float can mean lower trading liquidity.",
+          "kind": "data_point",
+          "source_id": "psx-dps-sys"
+        }
+      ],
+      "data_gaps": [
+        "Operating income, operating cash flow and capital expenditure are not available from the PSX Data Portal summary: operating margin and free cash flow cannot be calculated.",
+        "PSX Data Portal figures are standardized by Capital Stake and may differ from the issuer's annual report; P/E is based on unconsolidated financials.",
+        "Historical EPS is not adjusted for bonus shares or splits, so EPS growth across years is not comparable."
+      ]
+    },
+    {
+      "ticker": "OGDC",
+      "name": "Oil & Gas Development Company Limited",
+      "market": "PK",
+      "exchange": "PSX",
+      "currency": "PKR",
+      "sector": "Oil & Gas Exploration Companies",
+      "fiscal_year_end": "June",
+      "business_description": {
+        "text": "Oil and Gas Development Company Limited (OGDCL), was incorporated on 23 October 1997 under the Companies Ordinance, 1984 (now the Companies Act, 2017). The Company was established to undertake exploration and development of oil and gas resources, including production and sale of oil and gas and related activities formerly carried on by Oil and Gas Development Corporation, which was established in 1961.",
+        "kind": "exchange_profile",
+        "source_id": "psx-dps-ogdc"
+      },
+      "financials": [
+        {
+          "fiscal_year": "FY2023",
+          "period_start": null,
+          "period_end": null,
+          "revenue": 413594009000.0,
+          "operating_income": null,
+          "net_income": 224617797000.0,
+          "operating_cash_flow": null,
+          "capital_expenditures": null,
+          "diluted_eps": 52.23,
+          "source_id": "psx-dps-ogdc"
+        },
+        {
+          "fiscal_year": "FY2024",
+          "period_start": null,
+          "period_end": null,
+          "revenue": 463697861000.0,
+          "operating_income": null,
+          "net_income": 208975771000.0,
+          "operating_cash_flow": null,
+          "capital_expenditures": null,
+          "diluted_eps": 48.59,
+          "source_id": "psx-dps-ogdc"
+        },
+        {
+          "fiscal_year": "FY2025",
+          "period_start": null,
+          "period_end": null,
+          "revenue": 401177969000.0,
+          "operating_income": null,
+          "net_income": 169903614000.0,
+          "operating_cash_flow": null,
+          "capital_expenditures": null,
+          "diluted_eps": 39.5,
+          "source_id": "psx-dps-ogdc"
+        },
+        {
+          "fiscal_year": "FY2026",
+          "period_start": null,
+          "period_end": null,
+          "revenue": 449190752000.0,
+          "operating_income": null,
+          "net_income": 242373646000.0,
+          "operating_cash_flow": null,
+          "capital_expenditures": null,
+          "diluted_eps": 56.35,
+          "source_id": "psx-dps-ogdc"
+        }
+      ],
+      "shares_outstanding": {
+        "value": 4300928400.0,
+        "as_of": "Mon, Nov 23, 2026 3:49 PM",
+        "source_id": "psx-dps-ogdc",
+        "notes": "Shares from PSX Data Portal equity profile."
+      },
+      "market_snapshot": {
+        "price": 310.65,
+        "currency": "PKR",
+        "as_of": "Mon, Nov 23, 2026 3:49 PM",
+        "market_cap": 1336083407460.0,
+        "pe_ttm": 5.09,
+        "free_float_pct": 15.0,
+        "source_id": "psx-dps-ogdc",
+        "notes": "Snapshot captured when the dataset was built. P/E (TTM) as published by the portal, based on unconsolidated financials."
+      },
+      "competitive_advantages": [
+        {
+          "text": "Upstream oil and gas producer with a long operating history in Pakistan (company profile on PSX Data Portal).",
+          "kind": "workshop_summary",
+          "source_id": "psx-dps-ogdc"
+        }
+      ],
+      "risks": [
+        {
+          "category": "commodity",
+          "text": "Earnings depend on oil and gas prices and production volumes (workshop interpretation).",
+          "kind": "workshop_summary",
+          "source_id": "psx-dps-ogdc"
+        },
+        {
+          "category": "receivables",
+          "text": "Verify receivables and collection risk in the annual report: this dataset does not include balance-sheet or cash-flow data.",
+          "kind": "workshop_summary",
+          "source_id": "psx-dps-ogdc"
+        },
+        {
+          "category": "liquidity",
+          "text": "Free float is 15% of shares according to the PSX Data Portal; lower free float can mean lower trading liquidity.",
+          "kind": "data_point",
+          "source_id": "psx-dps-ogdc"
+        }
+      ],
+      "data_gaps": [
+        "Operating income, operating cash flow and capital expenditure are not available from the PSX Data Portal summary: operating margin and free cash flow cannot be calculated.",
+        "PSX Data Portal figures are standardized by Capital Stake and may differ from the issuer's annual report; P/E is based on unconsolidated financials.",
+        "Historical EPS is not adjusted for bonus shares or splits, so EPS growth across years is not comparable."
+      ]
+    },
+    {
+      "ticker": "LUCK",
+      "name": "Lucky Cement Limited",
+      "market": "PK",
+      "exchange": "PSX",
+      "currency": "PKR",
+      "sector": "Cement",
+      "fiscal_year_end": "June",
+      "business_description": {
+        "text": "Lucky Cement Limited was incorporated in Pakistan on September 18, 1993 under the Companies Ordinance, 1984 (now the Companies Act, 2017). The principal activity of the Company is manufacturing and marketing of cement.",
+        "kind": "exchange_profile",
+        "source_id": "psx-dps-luck"
+      },
+      "financials": [
+        {
+          "fiscal_year": "FY2023",
+          "period_start": null,
+          "period_end": null,
+          "revenue": 95832147000.0,
+          "operating_income": null,
+          "net_income": 13725814000.0,
+          "operating_cash_flow": null,
+          "capital_expenditures": null,
+          "diluted_eps": 43.06,
+          "source_id": "psx-dps-luck"
+        },
+        {
+          "fiscal_year": "FY2024",
+          "period_start": null,
+          "period_end": null,
+          "revenue": 115324942000.0,
+          "operating_income": null,
+          "net_income": 28106539000.0,
+          "operating_cash_flow": null,
+          "capital_expenditures": null,
+          "diluted_eps": 18.91,
+          "source_id": "psx-dps-luck"
+        },
+        {
+          "fiscal_year": "FY2025",
+          "period_start": null,
+          "period_end": null,
+          "revenue": 124511744000.0,
+          "operating_income": null,
+          "net_income": 33092162000.0,
+          "operating_cash_flow": null,
+          "capital_expenditures": null,
+          "diluted_eps": 22.59,
+          "source_id": "psx-dps-luck"
+        },
+        {
+          "fiscal_year": "FY2026",
+          "period_start": null,
+          "period_end": null,
+          "revenue": 136527017000.0,
+          "operating_income": null,
+          "net_income": 46629367000.0,
+          "operating_cash_flow": null,
+          "capital_expenditures": null,
+          "diluted_eps": 31.83,
+          "source_id": "psx-dps-luck"
+        }
+      ],
+      "shares_outstanding": {
+        "value": 1465000000.0,
+        "as_of": "Mon, Nov 23, 2026 3:49 PM",
+        "source_id": "psx-dps-luck",
+        "notes": "Shares from PSX Data Portal equity profile."
+      },
+      "market_snapshot": {
+        "price": 429.33,
+        "currency": "PKR",
+        "as_of": "Mon, Nov 23, 2026 3:49 PM",
+        "market_cap": 628968450000.0,
+        "pe_ttm": 12.8,
+        "free_float_pct": 30.0,
+        "source_id": "psx-dps-luck",
+        "notes": "Snapshot captured when the dataset was built. P/E (TTM) as published by the portal, based on unconsolidated financials."
+      },
+      "competitive_advantages": [
+        {
+          "text": "Established cement manufacturer; scale can help with costs in a commodity-like industry (workshop interpretation).",
+          "kind": "workshop_summary",
+          "source_id": "psx-dps-luck"
+        }
+      ],
+      "risks": [
+        {
+          "category": "cyclical",
+          "text": "Cement demand follows construction and infrastructure cycles, which are sensitive to interest rates (workshop interpretation).",
+          "kind": "workshop_summary",
+          "source_id": "psx-dps-luck"
+        },
+        {
+          "category": "energy_costs",
+          "text": "Energy is a major input cost for cement production (workshop interpretation).",
+          "kind": "workshop_summary",
+          "source_id": "psx-dps-luck"
+        },
+        {
+          "category": "liquidity",
+          "text": "Free float is 30% of shares according to the PSX Data Portal; lower free float can mean lower trading liquidity.",
+          "kind": "data_point",
+          "source_id": "psx-dps-luck"
+        }
+      ],
+      "data_gaps": [
+        "Operating income, operating cash flow and capital expenditure are not available from the PSX Data Portal summary: operating margin and free cash flow cannot be calculated.",
+        "PSX Data Portal figures are standardized by Capital Stake and may differ from the issuer's annual report; P/E is based on unconsolidated financials.",
+        "Historical EPS is not adjusted for bonus shares or splits, so EPS growth across years is not comparable."
+      ]
+    }
+  ],
+  "market_context": {
+    "fx": {
+      "pair": "USD/PKR",
+      "rate": 276.5027,
+      "description": "SBP M2M revaluation rate (PKR per 1 USD)",
+      "as_of": "23- Nov - 2026",
+      "source_id": "sbp-indicators"
+    },
+    "rates": {
+      "PK_policy_rate_pct": {
+        "value": 12.0,
+        "as_of": "2026-11-23",
+        "source_id": "sbp-indicators"
+      },
+      "PK_tbill_12m_cutoff_pct": {
+        "value": 12.41,
+        "as_of": "Nov 11, 2026",
+        "source_id": "sbp-indicators"
+      },
+      "US_treasury_1y_pct": {
+        "value": 4.51,
+        "as_of": "11/20/2026",
+        "source_id": "ust-yield-curve"
+      },
+      "US_treasury_10y_pct": {
+        "value": 4.92,
+        "as_of": "11/20/2026",
+        "source_id": "ust-yield-curve"
+      }
+    }
+  }
+}

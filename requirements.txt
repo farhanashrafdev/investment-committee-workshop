@@ -1,0 +1,9 @@
+# Python 3.11+ required. Versions tested on 2026-11-23 (Windows Server, Python 3.12.10).
+strands-agents[otel]~=1.66.0
+boto3~=1.44.9
+# The [crt] extra is required when credentials come from `aws login`.
+botocore[crt]~=1.44.9
+streamlit~=1.67.0
+pydantic~=2.14
+pandas~=3.1
+python-dotenv~=1.2
