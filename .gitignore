@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and local config (never commit)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials
+.aws/
+
+# Runtime output
+logs/
+audit/
+traces/
+*.jsonl
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Streamlit local secrets
+.streamlit/secrets.toml
